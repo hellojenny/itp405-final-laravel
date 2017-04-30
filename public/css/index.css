@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'Berlingske Bold';
+    src: url('/fonts/berlingske-bold.ttf');
+}
+
+@font-face {
+    font-family: 'Berlingske Heavy';
+    src: url('/fonts/berlingske-heavy.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    font: normal 0.8em/1em 'Orienta', serif;
+}
+
+h1 {
+    font: normal 1.4em/1em 'Berlingske Bold', serif;
+    color: #888;
+}
+
+h2, h4 {
+    font: normal 0.9em/1em 'Orienta', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #444;
+}
+
+a, a:visited { color: #000; font-weight: bold; text-decoration: none; }
+a:hover { color: #000 !important; }
+
+p { 
+    font: normal 1.2em/1.5em 'Orienta', serif;
+    margin-bottom: 25px; 
+}
+
+header {
+    margin: 0 auto 30px;
+    width: 800px;
+    background: url('/img/header.jpg') no-repeat center top;
+    background-size: 50% auto;
+    text-align: center;
+
+}
+
+    #title {
+        padding: 200px 0 0;
+    }
+
+    header h1 { font-size: 1.8em; }
+
+#wrap {
+    margin: 0 auto 40px;
+    width: 888px;
+}
+
+#subnav {
+}
+
+    #subnav a {
+        display: inline-block;
+        padding: 15px 20px;
+        margin: 0 10px 0 0;
+        background: #ddd;
+        color: #444;
+        font: bold 1.2em/1em 'Orienta', serif;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        text-align: center;
+    }
+
+    #subnav a:hover, #subnav a.active {
+        background: #fff;
+    }
+
+main {
+    margin: 0 auto 40px;
+    width: 844px;
+    padding: 22px;
+    background: #fff;
+}
+
+    main h4 { font-size: 1.4em; }
+
+    .food {
+        display: inline-block;
+        position: relative;
+        width: 165px;
+        margin: 13px;
+        padding: 10px 5px 20px 80px;
+        background: none;
+        border: 1px solid #ddd;
+    }
+
+        .food .circle, .bigCircle {
+            position: absolute;
+            top: 15px;
+            left: -15px;
+            background: #dedede;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+            .food .circle h1 {
+                position: absolute;
+                top: -12px;
+                left: 30px;
+                color: #fff !important;
+                font-size: 3.3em;
+            }
+
+            .food .circle img, .bigCircle img {
+                position: absolute;
+                top: 8px;
+                left: 8px;
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+            }
+
+        .bigCircle {
+            position: relative;
+            top: 0px;
+            left: -70px;
+            width: 300px;
+            height: 300px;
+        }
+
+        .bigCircle img {
+            top: 15px;
+            left: 15px;
+            width: 270px;
+            height: 270px;
+        }
+
+        .oneFood {
+            position: absolute;
+            top: 40px; 
+            left: 300px;
+        }
+
+    .warm h1, .warm a, .warm, .warm:hover, .warm .active { color: #c95961 !important; }
+    .warm .circle { background: #c95961; }
+
+    .cool h1, .cool a, .cool, .cool:hover, .cool .active { color: #1d9b97 !important; }
+    .cool .circle { background: #1d9b97; }
+
+    .neutral h1, .neutral a, .neutral, .neutral:hover, .neutral .active { color: #9f938a !important; }
+    .neutral .circle { background: #9f938a; }
+
+#backToLogin {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 140px;
+    padding: 20px;
+    background: #fff;
+    line-height: 1.6em;
+}
+
+#login, .module {
+    position: relative;
+    float: left;
+    width: 590px;
+    padding: 25px;
+    background: #fff;
+}
+
+#login form {
+    margin: 0 auto;
+    width: 525px;
+}
+
+#login input, #login button {
+    display: block;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    font-size: 1.4em;
+    width: 500px;
+}
+
+    #login button { width: 525px; }
+
+    .error { color: #ae0f1a; }
+    .success { color: #31ae0f; }
+
+.module {
+    float: right;
+    padding: 10px 25px;
+    margin-bottom: 15px;
+    width: 180px;
+    background: #aaa;
+}
+
+/*.overlay {
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.pop {
+    display: block;
+    position: absolute;
+    width: 400px;
+    top: 50%;
+    left: 30%;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #bbb;
+}*/
